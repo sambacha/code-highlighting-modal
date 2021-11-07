@@ -13,5 +13,8 @@
     "markdown-it": "^12.2.0",
     "shiki": "^0.9.12",
     "shiki-renderer-svg": "^0.9.7"
+  },
+  "devDependencies": {
+    "prettier": "^2.4.1"
   }
 }

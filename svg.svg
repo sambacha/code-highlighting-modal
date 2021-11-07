@@ -1,0 +1,59 @@
+<svg viewBox="0 0 511 430.61199722290036" width="511" height="430.61199722290036" xmlns="http://www.w3.org/2000/svg">
+<rect id="bg" fill="#2E3440" width="511" height="430.61199722290036" rx="4"></rect><g id="tokens" transform="translate(28, 33.12399978637695)"><text font-family="Inconsolata" font-size="14" y="16.561999893188474">
+<tspan x="0" fill="#FF7B72">import</tspan><tspan x="42" fill="#C9D1D9"> </tspan><tspan x="49" fill="#C9D1D9">Web3Modal, { ICoreOptions } </tspan><tspan x="245" fill="#FF7B72">from</tspan><tspan x="273" fill="#C9D1D9"> </tspan><tspan x="280" fill="#A5D6FF">&#39;web3modal&#39;</tspan><tspan x="357" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="33.12399978637695">
+<tspan x="0" fill="#FF7B72">import</tspan><tspan x="42" fill="#C9D1D9"> </tspan><tspan x="49" fill="#C9D1D9">{ Network, Web3Provider } </tspan><tspan x="231" fill="#FF7B72">from</tspan><tspan x="259" fill="#C9D1D9"> </tspan><tspan x="266" fill="#A5D6FF">&#39;@ethersproject/providers&#39;</tspan><tspan x="448" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="49.68599967956543">
+<tspan x="0" fill="#FF7B72">import</tspan><tspan x="42" fill="#C9D1D9"> </tspan><tspan x="49" fill="#C9D1D9">create </tspan><tspan x="98" fill="#FF7B72">from</tspan><tspan x="126" fill="#C9D1D9"> </tspan><tspan x="133" fill="#A5D6FF">&#39;zustand/esm&#39;</tspan><tspan x="224" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="66.2479995727539">
+<tspan x="0" fill="#FF7B72">import</tspan><tspan x="42" fill="#C9D1D9"> </tspan><tspan x="49" fill="#C9D1D9">{ useEffect } </tspan><tspan x="147" fill="#FF7B72">from</tspan><tspan x="175" fill="#C9D1D9"> </tspan><tspan x="182" fill="#A5D6FF">&#39;react&#39;</tspan><tspan x="231" fill="#C9D1D9">;</tspan>
+</text>
+
+<text font-family="Inconsolata" font-size="14" y="99.37199935913085">
+<tspan x="0" fill="#FF7B72">type</tspan><tspan x="28" fill="#C9D1D9"> </tspan><tspan x="35" fill="#FFA657">State</tspan><tspan x="70" fill="#C9D1D9"> </tspan><tspan x="77" fill="#FF7B72">=</tspan><tspan x="84" fill="#C9D1D9"> </tspan><tspan x="91" fill="#C9D1D9">{</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="115.93399925231932">
+<tspan x="0" fill="#C9D1D9">  </tspan><tspan x="14" fill="#FFA657">provider</tspan><tspan x="70" fill="#FF7B72">?:</tspan><tspan x="84" fill="#C9D1D9"> </tspan><tspan x="91" fill="#FFA657">Web3Provider</tspan><tspan x="175" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="132.4959991455078">
+<tspan x="0" fill="#C9D1D9">  </tspan><tspan x="14" fill="#FFA657">account</tspan><tspan x="63" fill="#FF7B72">?:</tspan><tspan x="77" fill="#C9D1D9"> </tspan><tspan x="84" fill="#FFA657">Account</tspan><tspan x="133" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="149.05799903869627">
+<tspan x="0" fill="#C9D1D9">  </tspan><tspan x="14" fill="#FFA657">network</tspan><tspan x="63" fill="#FF7B72">?:</tspan><tspan x="77" fill="#C9D1D9"> </tspan><tspan x="84" fill="#FFA657">Network</tspan><tspan x="133" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="165.61999893188474">
+<tspan x="0" fill="#C9D1D9">  </tspan><tspan x="14" fill="#FFA657">web3Modal</tspan><tspan x="77" fill="#FF7B72">?:</tspan><tspan x="91" fill="#C9D1D9"> </tspan><tspan x="98" fill="#FFA657">Web3Modal</tspan><tspan x="161" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="182.1819988250732">
+<tspan x="0" fill="#C9D1D9">};</tspan>
+</text>
+
+<text font-family="Inconsolata" font-size="14" y="215.30599861145018">
+<tspan x="0" fill="#FF7B72">const</tspan><tspan x="35" fill="#C9D1D9"> </tspan><tspan x="42" fill="#79C0FF">useStore</tspan><tspan x="98" fill="#C9D1D9"> </tspan><tspan x="105" fill="#FF7B72">=</tspan><tspan x="112" fill="#C9D1D9"> </tspan><tspan x="119" fill="#D2A8FF">create</tspan><tspan x="161" fill="#C9D1D9">&lt;</tspan><tspan x="168" fill="#FFA657">State</tspan><tspan x="203" fill="#C9D1D9">&gt;((</tspan><tspan x="224" fill="#FFA657">_set</tspan><tspan x="252" fill="#C9D1D9">) </tspan><tspan x="266" fill="#FF7B72">=&gt;</tspan><tspan x="280" fill="#C9D1D9"> </tspan><tspan x="287" fill="#C9D1D9">({}));</tspan>
+</text>
+
+<text font-family="Inconsolata" font-size="14" y="248.42999839782712">
+<tspan x="0" fill="#FF7B72">type</tspan><tspan x="28" fill="#C9D1D9"> </tspan><tspan x="35" fill="#FFA657">Account</tspan><tspan x="84" fill="#C9D1D9"> </tspan><tspan x="91" fill="#FF7B72">=</tspan><tspan x="98" fill="#C9D1D9"> </tspan><tspan x="105" fill="#79C0FF">string</tspan><tspan x="147" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="264.9919982910156">
+<tspan x="0" fill="#FF7B72">type</tspan><tspan x="28" fill="#C9D1D9"> </tspan><tspan x="35" fill="#FFA657">ConnectWallet</tspan><tspan x="126" fill="#C9D1D9"> </tspan><tspan x="133" fill="#FF7B72">=</tspan><tspan x="140" fill="#C9D1D9"> </tspan><tspan x="147" fill="#C9D1D9">(</tspan><tspan x="154" fill="#FFA657">opts</tspan><tspan x="182" fill="#FF7B72">?:</tspan><tspan x="196" fill="#C9D1D9"> </tspan><tspan x="203" fill="#FFA657">Partial</tspan><tspan x="252" fill="#C9D1D9">&lt;</tspan><tspan x="259" fill="#FFA657">ICoreOptions</tspan><tspan x="343" fill="#C9D1D9">&gt;) </tspan><tspan x="364" fill="#FF7B72">=&gt;</tspan><tspan x="378" fill="#C9D1D9"> </tspan><tspan x="385" fill="#79C0FF">void</tspan><tspan x="413" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="281.5539981842041">
+<tspan x="0" fill="#FF7B72">type</tspan><tspan x="28" fill="#C9D1D9"> </tspan><tspan x="35" fill="#FFA657">DisconnectWallet</tspan><tspan x="147" fill="#C9D1D9"> </tspan><tspan x="154" fill="#FF7B72">=</tspan><tspan x="161" fill="#C9D1D9"> </tspan><tspan x="168" fill="#C9D1D9">() </tspan><tspan x="189" fill="#FF7B72">=&gt;</tspan><tspan x="203" fill="#C9D1D9"> </tspan><tspan x="210" fill="#79C0FF">void</tspan><tspan x="238" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="298.11599807739253">
+<tspan x="0" fill="#FF7B72">type</tspan><tspan x="28" fill="#C9D1D9"> </tspan><tspan x="35" fill="#FFA657">UseWallet</tspan><tspan x="98" fill="#C9D1D9"> </tspan><tspan x="105" fill="#FF7B72">=</tspan><tspan x="112" fill="#C9D1D9"> </tspan><tspan x="119" fill="#C9D1D9">() </tspan><tspan x="140" fill="#FF7B72">=&gt;</tspan><tspan x="154" fill="#C9D1D9"> </tspan><tspan x="161" fill="#FFA657">State</tspan><tspan x="196" fill="#C9D1D9"> </tspan><tspan x="203" fill="#FF7B72">&amp;</tspan><tspan x="210" fill="#C9D1D9"> </tspan><tspan x="217" fill="#C9D1D9">{</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="314.67799797058103">
+<tspan x="0" fill="#C9D1D9">  </tspan><tspan x="14" fill="#FFA657">connect</tspan><tspan x="63" fill="#FF7B72">:</tspan><tspan x="70" fill="#C9D1D9"> </tspan><tspan x="77" fill="#FFA657">ConnectWallet</tspan><tspan x="168" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="331.2399978637695">
+<tspan x="0" fill="#C9D1D9">  </tspan><tspan x="14" fill="#FFA657">disconnect</tspan><tspan x="84" fill="#FF7B72">:</tspan><tspan x="91" fill="#C9D1D9"> </tspan><tspan x="98" fill="#FFA657">DisconnectWallet</tspan><tspan x="210" fill="#C9D1D9">;</tspan>
+</text>
+<text font-family="Inconsolata" font-size="14" y="347.801997756958">
+<tspan x="0" fill="#C9D1D9">};</tspan>
+</text></g>
+</svg>
