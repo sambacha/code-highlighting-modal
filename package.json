@@ -1,7 +1,7 @@
 {
   "name": "code-modal",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.1.0",
+  "description": "shiki modal",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -11,7 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "markdown-it": "^12.2.0",
-    "shiki": "^0.9.12",
+    "shiki": "^0.10.1",
     "shiki-renderer-svg": "^0.9.7"
   },
   "devDependencies": {
